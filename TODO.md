@@ -27,3 +27,9 @@
 
 ## 6. Redesenho visual solicitado
 - [x] “Mude para o layout para algo mais moderno, porém menos conhecido. Também mude as disposições dos menus e altere a palheta de cores para algo mais laranja com vermelho e preto.” Aplicar uma identidade mais moderna e distinta, reorganizar a posição dos menus, priorizar preto/carvão, laranja e vermelho sem comprometer contraste e legibilidade, e manter responsividade e acesso às mesmas funções do curso. A navegação fica horizontal no desktop e fixa no rodapé em celulares; o menu é visível nos breakpoints mobile e a paleta está aplicada aos controles, cartões e superfícies.
+
+
+## 7. Repositório público e GitHub Pages
+- [ ] “Troque por repositório publico, pois eu quero postar usando gitpages.” Tornar público o repositório `pretokl/mysql-na-pratica` e configurar o GitHub Pages para publicar a aplicação estática aprovada pelo usuário.
+- [ ] Fazer o build do Vite funcionar no subdiretório `/mysql-na-pratica/`, publicar em `dist/` por GitHub Actions e garantir que logo e capturas oficiais das aulas carreguem sem depender do proxy privado do Preview.
+- [ ] Preservar o repositório canônico Manus e o remote GitHub em paralelo; não substituir nem sobrescrever nenhum remote existente.

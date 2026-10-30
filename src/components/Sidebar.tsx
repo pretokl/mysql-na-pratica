@@ -24,7 +24,7 @@ export function Sidebar({ page, onNavigate, completed, total, open, onClose }: S
       <button className={`sidebar-scrim ${open ? 'is-visible' : ''}`} aria-label="Fechar menu" onClick={onClose} tabIndex={open ? 0 : -1} />
       <aside className={`sidebar ${open ? 'is-open' : ''}`} aria-label="Navegação principal">
         <button className="brand-lockup" onClick={() => { onNavigate('home'); onClose(); }} aria-label="MySQL na Prática, início">
-          <span className="brand-mark"><img src="/mysql-na-pratica-logo.svg" alt="" /></span>
+          <span className="brand-mark"><img src={`${import.meta.env.BASE_URL}mysql-na-pratica-logo.svg`} alt="" /></span>
           <span className="brand-copy"><strong>meu primeiro</strong><strong>MySQL</strong><small>aprenda no seu ritmo</small></span>
         </button>
 

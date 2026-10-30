@@ -48,3 +48,8 @@ O projeto permanece uma aplicação React/TypeScript/Vite estática. O conteúdo
 - `src/index.css` e `src/editorial-theme.css`: estilos-base e tema neo-noir responsivo.
 - `src/data/`: conteúdo de aulas e projetos.
 - `public/`: logo e capturas oficiais do MySQL Workbench.
+
+
+## Publicação estática no GitHub Pages
+
+A aplicação será publicada como site estático a partir de `dist/`; não haverá backend. O build local e o Preview mantêm `base: /`, enquanto o workflow configura `VITE_BASE_PATH=/mysql-na-pratica/` para gerar caminhos corretos no project site do GitHub Pages. Logo e capturas das aulas usarão assets versionados em `public/`, nunca URLs temporárias nem o proxy de armazenamento do Preview. Um workflow GitHub Actions no branch `main` executará checagem TypeScript, build, upload do artefato e deploy em `github-pages`. O repositório `pretokl/mysql-na-pratica` será tornado público conforme confirmação explícita do usuário; isso expõe código e histórico Git. O remote canônico Manus `origin` deve permanecer intacto e o remote GitHub continuará separado para o deploy.

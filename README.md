@@ -9,7 +9,11 @@ pnpm install
 pnpm dev
 ```
 
-A aplicação roda em `http://localhost:3000`. As capturas usadas como exemplos são servidas de `public/images` durante o desenvolvimento local; não é preciso configurar uma chave ou conta de armazenamento.
+A aplicação roda em `http://localhost:3000`. O Preview local e o do Manus usam a raiz `/`; as capturas oficiais são lidas de `public/images`, sem exigir chave de armazenamento.
+
+## Publicar com GitHub Pages
+
+O workflow `.github/workflows/deploy-pages.yml` executa checagem TypeScript, build e deploy no GitHub Pages quando há push para `main`, ou quando iniciado manualmente. No CI, `VITE_BASE_PATH=/mysql-na-pratica/` configura os caminhos para o project site; localmente o padrão continua `/`. O artefato publicado é `dist/`. O workflow não precisa de tokens ou segredos próprios.
 
 ## O que está incluído
 
@@ -27,4 +31,4 @@ As capturas do aplicativo são exemplos de telas reais documentadas pela Oracle/
 
 ## Tecnologia
 
-React, TypeScript e Vite. As imagens do curso também estão armazenadas como ativos privados do projeto WebDev, usando caminhos `/manus-storage/`; o proxy Vite do projeto recupera essas imagens na prévia gerenciada. A aplicação não requer backend próprio, cadastro de estudante ou chave de API fornecida pelo usuário.
+React, TypeScript e Vite. O logo e as capturas fazem parte do próprio repositório em `public/`, de modo que o site estático não depende do proxy de armazenamento privado usado anteriormente no Preview. A aplicação não requer backend próprio, cadastro de estudante ou chave de API fornecida pelo usuário.

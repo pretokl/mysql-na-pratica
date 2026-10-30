@@ -69,6 +69,7 @@ function vitePluginStorageProxy(): Plugin {
 }
 
 export default defineConfig({
+  base: process.env.VITE_BASE_PATH || '/',
   plugins: [react(), vitePluginStorageProxy()],
   server: {
     host: '0.0.0.0',

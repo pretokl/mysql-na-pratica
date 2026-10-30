@@ -19,3 +19,11 @@ As capturas de tela das aulas foram selecionadas na documentação oficial do My
 ## Limites das demonstrações
 
 O SQL exibido na bancada é uma simulação educativa. Não é enviado a um servidor nem reproduz toda a gramática MySQL. Os resultados da tabela são amostras inventadas para o curso; somente operações CRUD simples selecionadas alteram essas amostras no navegador. DDL e outros comandos reconhecidos apenas recebem uma explicação.
+
+
+## GitHub Pages
+
+- [Configurar uma fonte de publicação do GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site). A documentação distingue publicação por branch de workflow personalizado e descreve como selecionar GitHub Actions como fonte.
+- [Usar workflows personalizados com GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages). A publicação por Actions empacota os arquivos estáticos como artefato e os implanta no ambiente `github-pages`; o job de deploy requer permissões `pages: write` e `id-token: write`.
+- [REST API do GitHub Pages](https://docs.github.com/en/rest/pages/pages). A API permite configurar o tipo de build do Pages como `workflow`.
+- Actions oficiais usadas pelo workflow: [checkout](https://github.com/actions/checkout), [setup-node](https://github.com/actions/setup-node), [pnpm/action-setup](https://github.com/pnpm/action-setup), [configure-pages](https://github.com/actions/configure-pages), [upload-pages-artifact](https://github.com/actions/upload-pages-artifact) e [deploy-pages](https://github.com/actions/deploy-pages).
