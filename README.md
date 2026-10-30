@@ -2,6 +2,10 @@
 
 Aplicativo didático em português para aprender a planejar bancos de dados, usar MySQL Server com MySQL Workbench e praticar SQL em etapas.
 
+## Site publicado
+
+A aplicação está online no [GitHub Pages](https://pretokl.github.io/mysql-na-pratica/).
+
 ## Iniciar localmente
 
 ```bash
