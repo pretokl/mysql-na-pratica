@@ -12,10 +12,10 @@ type SidebarProps = {
 };
 
 const navigation: { id: PageId; title: string; caption: string; icon: IconName }[] = [
-  { id: 'home', title: 'Minha jornada', caption: 'Início e progresso', icon: 'home' },
-  { id: 'course', title: 'Aulas passo a passo', caption: 'Trilha completa', icon: 'book' },
-  { id: 'lab', title: 'Laboratório SQL', caption: 'Aprender praticando', icon: 'flask' },
-  { id: 'projects', title: 'Projetos de exemplo', caption: 'Escola, RH e mais', icon: 'layers' },
+  { id: 'course', title: 'Trilha', caption: 'Aulas guiadas', icon: 'book' },
+  { id: 'projects', title: 'Modelos', caption: 'Projetos prontos', icon: 'layers' },
+  { id: 'lab', title: 'Bancada SQL', caption: 'Prática segura', icon: 'flask' },
+  { id: 'home', title: 'Visão geral', caption: 'Seu progresso', icon: 'home' },
 ];
 
 export function Sidebar({ page, onNavigate, completed, total, open, onClose }: SidebarProps) {
@@ -28,8 +28,8 @@ export function Sidebar({ page, onNavigate, completed, total, open, onClose }: S
           <span className="brand-copy"><strong>meu primeiro</strong><strong>MySQL</strong><small>aprenda no seu ritmo</small></span>
         </button>
 
-        <div className="sidebar-section-label">SEU ESPAÇO</div>
-        <nav className="primary-nav">
+        <div className="sidebar-section-label">ÍNDICE / APRENDER</div>
+        <nav className="primary-nav" aria-label="Seções do curso">
           {navigation.map((item) => (
             <button key={item.id} className={`nav-item ${page === item.id ? 'active' : ''}`} onClick={() => { onNavigate(item.id); onClose(); }} aria-current={page === item.id ? 'page' : undefined}>
               <span className="nav-icon"><Icon name={item.icon} size={19} /></span>

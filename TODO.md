@@ -24,3 +24,6 @@
 - [x] “Também que tenha níveis de aprendizagem e exercícios de fixação. Os primeiros níveis podem ser baseados na disciplina de Modelagem e Desenvolvimento de Banco de Dados. E ao longo das aulas, vá se aprofundando na criação de banco de dados. Que tenha opções de criação de banco de dados.”
 - [x] Oferecer projetos e estruturas de exemplo para escolas, empresas com RH, restaurantes e outros contextos cotidianos.
 - [x] Ensinar a modelar, implementar, popular e consultar bancos completos, incluindo criação de schemas e tabelas, relacionamentos, restrições, consultas, inserções, atualizações, exclusões, views e procedimentos básicos; manter diagramas visuais coerentes com o SQL dos projetos.
+
+## 6. Redesenho visual solicitado
+- [x] “Mude para o layout para algo mais moderno, porém menos conhecido. Também mude as disposições dos menus e altere a palheta de cores para algo mais laranja com vermelho e preto.” Aplicar uma identidade mais moderna e distinta, reorganizar a posição dos menus, priorizar preto/carvão, laranja e vermelho sem comprometer contraste e legibilidade, e manter responsividade e acesso às mesmas funções do curso. A navegação fica horizontal no desktop e fixa no rodapé em celulares; o menu é visível nos breakpoints mobile e a paleta está aplicada aos controles, cartões e superfícies.
